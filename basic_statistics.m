@@ -1,7 +1,5 @@
 %% Import the data and select the id
-len_gz = length(length(Guangzhou(:, 1)));
-len_hz = length(length(data_hz(:, 1)));
-len_km = length(length(data_km(:, 1))); 
+ 
 % Select the rows whose author is NOT NULL
 rows_gz = Guangzhou.author ~= "NULL";
 rows_hz = Hangzhou.author ~= "NULL";
@@ -10,6 +8,7 @@ rows_km = Kunming.author ~= "NULL";
 user_id_guangzhou = Guangzhou{rows_gz, "author"};
 user_id_hangzhou= Hangzhou{rows_hz, "author"};
 user_id_kunming = Kunming{rows_km, "author"};
+
 %% Show users who posted most in the period selected(Guangzhou)
 % set the ditribution array for graphing
 tb_gz = tabulate(user_id_guangzhou);
@@ -68,13 +67,38 @@ histogram(kunming_post_distribution, 'Normalization','pdf');
 figure;
 histogram(kunming_post_distribution_except1);
 
-%% tb_gz = tabulate(user_id_guangzhou);
+%% Most-post user in three cities
+% guangzhou
 id_gz_most_num = [];
+gz_post_max = 0;
+gz_post_max_id = tb_gz{1,1};
 for i = 1: length(tb_gz(:, 2))
-   if tb_gz{i, 2} > 50
-       id_gz_most_num = [id_gz_most_num, tb_gz{i, 2}];
+   if tb_gz{i, 2} > gz_post_max
+       gz_post_max = tb_gz{i,2};
+       gz_post_max_id = tb_gz{i, 1};
    end
 end
+% hangzhou
+id_hz_most_num = [];
+hz_post_max = 0;
+hz_post_max_id = tb_hz{1,1};
+for i = 1: length(tb_hz(:, 2))
+   if tb_hz{i, 2} > hz_post_max
+       hz_post_max = tb_hz{i,2};
+       hz_post_max_id = tb_hz{i, 1};
+   end
+end
+% Kunming
+id_km_most_num = [];
+km_post_max = 0;
+km_post_max_id = tb_km{1,1};
+for i = 1: length(tb_km(:, 2))
+   if tb_km{i, 2} > km_post_max
+       km_post_max = tb_km{i,2};
+       km_post_max_id = tb_km{i, 1};
+   end
+end
+
 
 
 
