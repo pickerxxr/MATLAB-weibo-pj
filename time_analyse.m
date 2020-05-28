@@ -1,3 +1,8 @@
+% Time-series analysis (with influence of COVID-19)
+% @author Alan Liu
+% @version 1.0
+
+%% 
 rows_gz_time = Guangzhou.month == 1;
 rows_hz_time = Hangzhou.month == 1;
 rows_km_time = Kunming.month == 1;

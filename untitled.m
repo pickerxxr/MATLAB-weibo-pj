@@ -1,6 +1,8 @@
 function varargout = untitled(varargin)
-% UNTITLED MATLAB code for untitled.fig
-%      UNTITLED, by itself, creates a new UNTITLED or raises the existing
+% MATLAB code for untitled.fig. Plot the users data.
+% @Alan Liu 
+% @ version 1.0
+% UNTITLED, by itself, creates a new UNTITLED or raises the existing
 %      singleton*.
 %
 %      H = UNTITLED returns the handle to a new UNTITLED or the handle to

@@ -1,3 +1,8 @@
+% Import all the data.
+% @author Alan Liu
+% @version 1.0
+
+
 %% Guangzhou
 filename = '.\Guangzhou.csv';
 delimiter = ',';

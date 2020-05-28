@@ -1,13 +1,10 @@
+% all about id import and statistics
+% @author Alan Liu
+% @version 1.0
+
 %% Import the data and select the id
  
 % Select the rows whose author is NOT NULL
-rows_gz = Guangzhou.author ~= "NULL";
-rows_hz = Hangzhou.author ~= "NULL";
-rows_km = Kunming.author ~= "NULL";
-% Put the id(author) column into a string vec
-user_id_guangzhou = Guangzhou{rows_gz, "author"};
-user_id_hangzhou= Hangzhou{rows_hz, "author"};
-user_id_kunming = Kunming{rows_km, "author"};
 
 %% Show users who posted most in the period selected(Guangzhou)
 % set the ditribution array for graphing

@@ -1,4 +1,5 @@
-% By Alan Liu
+% @Alan Liu
+% @version1.0
 % 2020/5/24
 % Draw some pdf distribution of random variables of the dataset.
 

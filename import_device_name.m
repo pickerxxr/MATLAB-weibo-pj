@@ -1,4 +1,8 @@
 function result = import_device_name()
+% fucntion to import the source csv file
+% @author Alan Liu
+% @version 1.0
+
 filename = '.\source.csv';
 delimiter = ',';
 formatSpec = '%*s%s%[^\n\r]';

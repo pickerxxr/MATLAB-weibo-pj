@@ -1,3 +1,8 @@
+% K-means method to classify the different type of users
+% @author Alan Liu
+% @version 1.0
+
+
 rows_gz1 = Guangzhou.comment_num < 93 & Guangzhou.likes_num < 550;
 rows_gz2 = Guangzhou.comment_num >= 93 & Guangzhou.likes_num < 550;
 rows_gz3 = Guangzhou.likes_num >= 550;

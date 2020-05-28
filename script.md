@@ -8,6 +8,7 @@ MyProject.name = "MATLAB 微博数据分析与挖掘”;
 MyProject.author = "刘有哲";
 MyProject.StudentID = "1830710052";
 MyProject.CodeLines = 1071;   % Containing all the comments 
+MyProject.GitHubRepository = https://github.com/pickerxxr/MATLAB-weibo-pj
 ```
 
 ## 摘要

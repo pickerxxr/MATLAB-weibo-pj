@@ -1,3 +1,6 @@
+% all about device statistics
+% @author Alan Liu
+% @version 1.0
 %% Import the data and select the device column(Guangzhou)
 
 % Select the rows whose id is NOT NULL

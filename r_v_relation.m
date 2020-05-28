@@ -1,3 +1,7 @@
+% relationship analysis
+% @author Alan Liu
+% @version 1.0
+
 %% Calculate the centrality of users
 rows_gz = Guangzhou.author ~= "NULL";
 % Put the three column into a string vec
@@ -94,3 +98,5 @@ plot(m, n, '-b', "LineWidth", 2.0);
 legend("like-comment", "linear regression");
 title("cvx method")
 hold off;
+
+

@@ -1,3 +1,8 @@
+% Analyse the possible robot users
+% @author Alan Liu
+% @version 1.0
+
+%%
 rows_gz = Guangzhou.likes_num <= 1 & Guangzhou.comment_num >= 5000;
 rows_hz = Hangzhou.likes_num <= 1 & Hangzhou.comment_num >= 500;
 rows_km = Kunming.likes_num <= 1 & Kunming.comment_num >= 500;
